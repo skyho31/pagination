@@ -22,10 +22,9 @@ class Data {
   getData (page, pageSize) {
     const parsedPage = Number(page)
     const parsedPageSize = Number(pageSize)
-    const totalPage = this.length / parsedPageSize
     return {
       contents: this.data.slice((parsedPage - 1) * parsedPageSize, parsedPage * parsedPageSize),
-      totalPage: this.length % parsedPageSize === 0 ? totalPage : totalPage + 1
+      totalPage: Math.ceil(this.length / parsedPageSize)
     }
   }
 }
