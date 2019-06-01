@@ -1,0 +1,55 @@
+* {
+ box-sizing: border-box; 
+}
+
+html, body {
+  margin: 0;
+}
+
+/* modifier */
+.center { text-align: center }
+.left { text-align: left }
+.right { text-align: right }
+
+/* grid block */
+#grid {
+  width: 80%;
+  margin: auto;
+}
+
+.grid__wrapper {
+  border-top: 1px solid black;
+}
+
+.grid__line {
+  display: flex;
+  margin: 0;
+}
+
+.grid__line-title,
+.grid__line-description {
+  border: 1px solid black;
+  border-top: none;
+  margin: 0;
+}
+
+.grid__line-title {
+  flex-basis: 100px;
+}
+
+.grid__line-description {
+  flex: 1;
+  border-left: none;
+}
+
+/* pagination block */
+#pagination {
+  width: 80%;
+  margin: auto;
+  margin-top: 50px;
+  overflow: hidden;
+}
+
+.pagination__option {
+  float: right;
+}

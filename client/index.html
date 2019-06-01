@@ -3,8 +3,44 @@
     <link href="./main.css" rel="stylesheet" />
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <!-- block level -->
+      <div id="grid">
+        <!-- element level -->
+        <h1 class="grid__title">Grid Table</h1>
+        <div class="grid__wrapper">
+          <dl class="grid__line">
+            <dt class="grid__line-title center">순서</dt>
+            <dd class="grid__line-description center">a</dd>
+            <dt class="grid__line-title center">값</dt>
+            <dd class="grid__line-description center">1</dd>
+          </dl>
+          <dl class="grid__line">
+            <dt class="grid__line-title center">순서</dt>
+            <dd class="grid__line-description center">a</dd>
+            <dt class="grid__line-title center">값</dt>
+            <dd class="grid__line-description center">1</dd>
+          </dl>
+        </div>
+      </div>
+      <!-- block level -->
+      <div id="pagination">
+        <div class="pagination__list"></div>
+        <select class="pagination__option">
+          <option value="10">10개 보기</option>
+          <option value="20">20개 보기</option>
+          <option value="30">30개 보기</option>
+        </select>
+      </div>
+    </div>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script src="main.js"></script>
+    <script src="util.js"></script>
+    <script src="Grid.js"></script>
+    <script src="Pagination.js"></script>
+    <script src="Page.js"></script>
+    <script>
+      const page = new Page()
+      page.requestGridData()
+    </script>
   </body>
 </html>
