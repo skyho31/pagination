@@ -1,20 +1,28 @@
 * {
- box-sizing: border-box; 
+  box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   margin: 0;
 }
 
 /* modifier */
-.center { text-align: center }
-.left { text-align: left }
-.right { text-align: right }
+.center {
+  text-align: center;
+}
+.left {
+  text-align: left;
+}
+.right {
+  text-align: right;
+}
 
 /* grid block */
 #grid {
   width: 80%;
   margin: auto;
+  margin-top: 50px;
 }
 
 .grid__wrapper {
@@ -48,6 +56,10 @@ html, body {
   margin: auto;
   margin-top: 50px;
   overflow: hidden;
+}
+
+.pagination__list {
+  float: left;
 }
 
 .pagination__option {

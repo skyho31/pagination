@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/skyho31/pagination#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "open": "^6.3.0"
   }
 }

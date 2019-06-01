@@ -1,6 +1,7 @@
 const express = require('express')
 const app = express()
 const path = require('path')
+const open = require('open')
 const MockData = require('./Data')
 const mockDB = new MockData()
 
@@ -24,4 +25,5 @@ app.get('/data', (req, res) => {
 // server power on
 app.listen(9000, () => {
   console.log('server on port 9000')
+  open('http://localhost:9000')
 })
